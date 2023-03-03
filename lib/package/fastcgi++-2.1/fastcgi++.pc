@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fastcgi++
+Description: C++ library for the FastCGI protocol
+URL: http://www.nongnu.org/fastcgipp
+Version: 2.1
+Requires: 
+Libs: -L${libdir} -lfastcgipp -lboost_thread-mt -lboost_system-mt -pthread -lboost_date_time-mt
+Cflags: -I${includedir}
